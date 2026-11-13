@@ -1,0 +1,16 @@
+{
+  "id": "./index.html",
+  "name": "SIG RIO BRANCO - Administrativo",
+  "short_name": "SIG RB ADM",
+  "description": "Sistema Integrado de Gestão RIO BRANCO PMDF - acesso administrativo",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0b1a4a",
+  "theme_color": "#0b1a4a",
+  "icons": [
+    { "src": "rb_icon_192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "rb_icon_512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
