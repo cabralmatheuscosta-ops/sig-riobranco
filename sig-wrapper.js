@@ -12,7 +12,7 @@
 
   // Endereço da implantação do Apps Script (não é segredo: aparece para
   // qualquer usuário; a segurança fica no backend - sessão, 2FA, níveis).
-  var URL_APPS_SCRIPT = "COLE_AQUI_A_URL_DA_IMPLANTACAO_RIO_BRANCO";
+  var URL_APPS_SCRIPT = "https://script.google.com/macros/s/AKfycbwukKmViDhpedRlkj6RLTvSNEXBDJ8kzwJdgN9vodQ-DnylsKRWfiSKEDnnuU_ihr2aKw/exec";
 
   var tag = document.currentScript;
   var modo = (tag && tag.getAttribute("data-modo")) || "";
