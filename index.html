@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <!-- Casca do perfil ADMINISTRATIVO -->
+    <title>SIG RIO BRANCO - Administrativo</title>
+
+    <!-- Segurança (o GitHub Pages não permite cabeçalhos HTTP próprios) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; img-src 'self' data:; manifest-src 'self'; frame-src https://script.google.com https://*.googleusercontent.com https://accounts.google.com; base-uri 'none'; form-action 'none'; object-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- App instalável: manifest PRÓPRIO desta página -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0b1a4a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="SIG ADM">
+    <link rel="apple-touch-icon" href="rb_icon_192x192.png">
+    <link rel="icon" type="image/png" href="rb_icon_192x192.png">
+    <style>
+        html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden;
+            background-color: #0b1a4a; font-family: Arial, sans-serif; }
+        iframe { width: 100%; height: 100%; border: none; display: none; }
+        #loader_SIG { display: flex; flex-direction: column; justify-content: center; align-items: center;
+            width: 100%; height: 100%; color: #ffffff; font-size: 16px; text-align: center;
+            padding: 0 24px; box-sizing: border-box; }
+        .spinner { border: 4px solid rgba(255,255,255,0.1); width: 42px; height: 42px; border-radius: 50%;
+            border-left-color: #ffffff; animation: spin 1s linear infinite; margin-bottom: 20px; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        #btnRecarregar_SIG { display: none; margin-top: 20px; padding: 10px 22px; background: #ffffff;
+            color: #0b1a4a; border: none; border-radius: 6px; font-weight: bold; font-size: 14px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div id="loader_SIG">
+        <div class="spinner" id="spinner_SIG"></div>
+        <div id="statusTexto">Carregando o sistema...</div>
+        <button id="btnRecarregar_SIG" type="button">Recarregar</button>
+    </div>
+    <iframe id="iframe_SIG" src="about:blank" title="SIG RIO BRANCO"
+            allow="clipboard-write; fullscreen"></iframe>
+    <script src="sig-wrapper.js"></script>
+</body>
+</html>
