@@ -1,7 +1,7 @@
 {
   "id": "./index.html",
   "name": "SIG RIO BRANCO - Administrativo",
-  "short_name": "SIG RB ADM",
+  "short_name": "SIG RIO BRANCO",
   "description": "Sistema Integrado de Gestão RIO BRANCO PMDF - acesso administrativo",
   "start_url": "./index.html",
   "scope": "./",
